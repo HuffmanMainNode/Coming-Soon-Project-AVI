@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/HuffmanMainNode/Coming-Soon-Project-AVI/blob/main/schemas/project.schema.json",
+  "title": "Project AVI status manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "project",
+    "full_name",
+    "repository",
+    "status",
+    "maturity",
+    "design_pillars",
+    "implemented_capabilities",
+    "planned_capabilities",
+    "runtime_required",
+    "license_status",
+    "limitations"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "project": {"const": "Project AVI"},
+    "full_name": {"type": "string", "minLength": 1},
+    "repository": {"type": "string", "format": "uri"},
+    "status": {"enum": ["announcement", "prototype", "beta", "released", "archived"]},
+    "maturity": {"type": "string", "minLength": 1},
+    "design_pillars": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
+    "implemented_capabilities": {"type": "array", "items": {"type": "string"}},
+    "planned_capabilities": {"type": "array", "items": {"type": "string"}},
+    "runtime_required": {"type": "boolean"},
+    "license_status": {"type": "string"},
+    "limitations": {"type": "array", "items": {"type": "string"}, "minItems": 1}
+  }
+}
