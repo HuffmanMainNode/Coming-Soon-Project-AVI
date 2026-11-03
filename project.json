@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "project": "Project AVI",
+  "full_name": "Advanced Virtual Intelligence System",
+  "repository": "https://github.com/HuffmanMainNode/Coming-Soon-Project-AVI",
+  "status": "announcement",
+  "maturity": "pre-implementation",
+  "design_pillars": [
+    "decentralization",
+    "bounded_autonomy",
+    "resource_reclamation"
+  ],
+  "implemented_capabilities": [],
+  "planned_capabilities": [
+    "local-first modular architecture",
+    "human approval for consequential actions",
+    "inspectable agent interfaces",
+    "portable and reproducible deployment"
+  ],
+  "runtime_required": false,
+  "license_status": "not_declared",
+  "limitations": [
+    "No application code or runtime is present.",
+    "Planned capabilities are not implemented or validated.",
+    "No sandbox, decentralized network, autonomous agent, API, or hosted service is provided."
+  ]
+}
